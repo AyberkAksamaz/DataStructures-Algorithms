@@ -3,4 +3,5 @@
 # Eclipse
 /.cproject/
 /.project/
+stack.c
 /.settings/
