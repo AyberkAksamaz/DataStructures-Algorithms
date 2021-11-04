@@ -1,4 +1,6 @@
 /Debug/
-.project
+
+# Eclipse
 .cproject
-.settings
+.project
+.settings/
