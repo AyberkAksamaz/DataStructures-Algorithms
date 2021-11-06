@@ -14,6 +14,7 @@
 #include <stdlib.h>
 #include "stack.h"
 #include "queue.h"
+#include "linked_list.h"
 
 int main() {
 	/*
@@ -25,6 +26,7 @@ int main() {
 	int x = linked_stack_pop(stack);
 	*/
 
+	/*
 	LINKED_QUEUE queue = linked_queue_init();
 	linked_queue_enqueue(queue, (void *)15);
 	linked_queue_enqueue(queue, 25);
@@ -37,6 +39,23 @@ int main() {
 	linked_queue_dequeue(queue);
 	printf("\n");
 	print_queue(queue);
+	*/
+
+	LINKED_LIST list =  linked_list_init();
+//	linked_list_prepend(list, 15);
+//	linked_list_prepend(list, 25);
+//	linked_list_prepend(list, 35);
+//	linked_list_prepend(list, 45);
+
+	linked_list_append(list, 55);
+	linked_list_append(list, 65);
+	linked_list_append(list, 75);
+	linked_list_append(list, 85);
+	linked_list_insert(list, 100, 0);
+	linked_list_insert(list, 200, 2);
+	linked_list_insert(list, 300, 6);
+
+
 }
 
 
