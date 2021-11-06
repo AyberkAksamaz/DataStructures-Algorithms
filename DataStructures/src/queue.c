@@ -33,6 +33,7 @@ int linked_queue_is_empty(LINKED_QUEUE queue){
 int linked_queue_size(LINKED_QUEUE queue){
 	int retval = 0;
 	LINKED_QUEUE_NODE node;
+	node = queue->head;
 	if(!linked_queue_is_empty(queue)) {
 		retval++;
 		while(node->next != NULL) {
@@ -41,7 +42,6 @@ int linked_queue_size(LINKED_QUEUE queue){
 		}
 	} else retval = 0;
 
-	free(node);
 	return retval;
 }
 
@@ -88,7 +88,9 @@ void print_queue(LINKED_QUEUE queue){
 			printf("%p <- ", node->data);
 			node = node->next;
 		}
+		printf("%p\n", node->data);
 	} else { printf("Queue is Empty!!"); }
+
 	free(node);
 }
 
