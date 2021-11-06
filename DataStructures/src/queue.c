@@ -84,12 +84,13 @@ void print_queue(LINKED_QUEUE queue){
 
 	node = queue->head;
 	if(!linked_queue_is_empty(queue)) {
-		while(node->next != NULL) {
+		while(node != NULL) {
 			printf("%p <- ", node->data);
 			node = node->next;
 		}
-		printf("%p\n", node->data);
-	} else { printf("Queue is Empty!!"); }
+		printf("\n");
+		//printf("%p\n", node->data);
+	} else { printf("Queue is Empty!!\n"); }
 
 	free(node);
 }

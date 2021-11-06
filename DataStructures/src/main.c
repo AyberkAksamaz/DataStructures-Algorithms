@@ -33,10 +33,10 @@ int main() {
 	linked_queue_enqueue(queue, 55);
 	print_queue(queue);
 	printf("size: %d",linked_queue_size(queue));
-//	linked_queue_dequeue(queue);
-//	linked_queue_dequeue(queue);
-//	printf("\n");
-//	print_queue(queue);
+	linked_queue_dequeue(queue);
+	linked_queue_dequeue(queue);
+	printf("\n");
+	print_queue(queue);
 }
 
 
