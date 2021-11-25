@@ -47,14 +47,17 @@ int main() {
 //	linked_list_prepend(list, 35);
 //	linked_list_prepend(list, 45);
 
-	linked_list_append(list, 55);
-	linked_list_append(list, 65);
-	linked_list_append(list, 75);
-	linked_list_append(list, 85);
-	linked_list_insert(list, 100, 0);
-	linked_list_insert(list, 200, 2);
-	linked_list_insert(list, 300, 6);
+	linked_list_append(list, (int *)55);
+	linked_list_append(list, (int *)65);
+	linked_list_append(list, (int *)75);
+	linked_list_append(list, (int *)85);
+//	linked_list_insert(list, (int *)100, 0);
+//	linked_list_insert(list, (int *)200, 2);
+//	linked_list_insert(list, (int *)300, 6);
 
+	void *data = linked_list_remove(list, 2);
+
+	printf("%d", data);
 
 }
 

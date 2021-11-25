@@ -18,5 +18,15 @@ void linked_list_free(LINKED_LIST list);
 void linked_list_prepend(LINKED_LIST list, void *data);
 void linked_list_append(LINKED_LIST list, void *data);
 void linked_list_insert(LINKED_LIST list, void *data, int idx);
+void *linked_list_remove(LINKED_LIST list, int idx);
+void linked_list_set(LINKED_LIST list,void *data, int idx);
+void *linked_list_get(LINKED_LIST list, int idx);
+void linked_list_removeall(LINKED_LIST list);
+void linked_list_concatenate(LINKED_LIST list, LINKED_LIST list2);
+int linked_list_size(LINKED_LIST list);
+void linked_list_fprint(LINKED_LIST list, void (*print_type)(void*));
+void integer_printer(void *data);
+void char_printer(void *data);
+
 
 #endif /* LINKED_LIST_H_ */
